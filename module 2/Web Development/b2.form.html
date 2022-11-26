@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-widtboh, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    td{
+      font-width:bold;
+      font-family: Arial, Helvetica, sans-serif;    
+    }
+    body{
+     background-color: antiquewhite;
+    }
+    </style>
+</head>
+<body>
+  <center>
+    <div style="border:solid; width: 70%;">
+    <form>
+
+    <table cellpadding="9px">
+      <th colspan="6">BANK REGISTRATION FORM</th>
+        <tr>
+            <td><li>NAME</li></td>
+          <td><input type="text" placeholder="First Name" required pattern="[a-zA-Z]"></td>
+          <td><input type="text" placeholder="Middle Name" required pattern="[a-zA-Z]"></td>
+          <td><input type="text" placeholder="Last Name" required pattern="[a-zA-Z]"></td>
+        </tr>
+        <tr>
+            <td><li>AGE</li></td>
+            <td><input type="number" placeholder="AGE" min="1" max="100" name="required"></td>
+            <td><li>Date Of Birth</li></td>
+            <td><input type="date" name=""></td>
+        </tr>
+        <tr>
+          <td><li>Gender</li></td>
+          <td><input type="radio" name="Gender">male</td>
+          <td><input type="radio" name="Gender">female</td>
+        </tr>
+        <tr>
+          <td><li>Mobile number</li></td>
+          <td><input type="text" name="" placeholder="Enter number"></td>
+          <td><li>Phone number</li></td>
+          <td><input type="text" name="" placeholder="Enter number"></td>
+        </tr>
+        <tr>
+          <td><li>Email Address</li></td>
+          <td><input type="Email"required pattern="[a-zA-Z0-9!#$%^&*]+@[a-zA-Z]+\.[a-zA-Z]+"placeholder="Enter Email"  name=""></td>
+        </tr>
+        <td><li>Password</li></td>
+        <td><input type="password"required pattern="[a-zA-Z0-9!#$%^&*]+@[a-zA-Z]+\.[a-zA-Z]+"placeholder="Enter Password"  name=""></td>
+        </tr>
+        <tr>
+					<td><li>Country</li></td>
+					<td><input type="text" placeholder="Enter Country Name" name=""></td>
+					<td><li>Pincode</li></td>
+					<td><input type="text" placeholder="pin Number" required pattern="[0-9]{6}" name=""></td>
+
+				</tr>
+				<tr>
+					<td><li>City</li></td>
+					<td><input type="text" placeholder="Enter City Name" name=""></td>
+				</tr>
+
+				<tr>
+					<td><li>Address</li></td>
+					<td><textarea cols="21" rows="4"></textarea></td>
+				</tr>
+
+				<tr>
+					<td><li>Bank Name</li></td>
+					<td><select>
+						<option hidden >select Bank</option>
+						<option>Indian Overseas Bank</option>
+						<option>PNB</option>
+						<option>SBI</option>
+						<option>Canara Bank</option>
+						<option>Bank of Maharashtra</option>
+    					<option>HDFC</option>
+						<option>Central Bank of India</option>
+						<option>Indian Bank.</option>
+						<option>Bank Of Baroda</option>
+					</select></td>
+
+					<td><li>Branch Name</li></td>
+						<td><input type="text" placeholder="Enter Your Branch Name" required pattern="[a-zA-Z]+" name=""></td>
+				</tr>
+
+					<tr>
+						<td><li> What Type Of Account </li></td>
+						<td><select>
+							<option hidden >select Account</option>
+							<option>SAVING ACCOUNT</option>
+							<option>CURRENT ACCOUNT</option>
+							<option>RECURRING DEPOSIT ACCOUNT</option>
+							<option>FIXED DEPOSIT ACCOUNT</option>
+						</select></td>
+
+					</tr>
+
+					<tr>
+						<td><li>Adhar Card Number</li></td>
+						<td><input type="text" placeholder="Enter Adhar Number" required pattern="[0-9]{12}" name=""></td>
+
+						<td><li>Pan Card Number</li></td>
+						<td><input type="text" placeholder="Enter Pan Number" required pattern="[a-zA-Z0-9]{10}" name=""></td>
+					</tr>
+					
+					<tr>
+						
+						<td colspan="2" align="right"><input type="Submit" name=""></td>
+						<td><input type="Reset" name=""></td>
+					</tr>
+    </table>
+  </form>
+</div>
+  </center>
+</body>
+</html>
