@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;margin: 0;padding: 0;}
+		.nav
+		{
+			height: 70px;
+			width: 100%;
+			background: red;
+			display: flex;
+
+		}
+		.nav .n1
+		{
+			height: 70px;
+			width: 80%;
+			/*background: yellow;*/
+
+		}
+		.nav .n1 .option
+		{
+			display: inline;
+			margin-right: 10px;
+			line-height: 70px;
+		}
+		.nav .n1 li{
+			list-style: none;
+		}
+		.nav .n1 a 
+		{
+			text-decoration: none;
+			color: white;
+			font-size: 20px;
+			padding: 26px;
+		}
+		.nav .n1 a:hover
+		{
+			background:#960e20 ;
+		}
+		.nav .n2 
+		{
+			width: 20%;
+			text-decoration: none;
+			color: white;
+			font-size: 20px;
+			padding: 26px;
+			text-align: right;
+			
+		}
+		.nav .n2 a 
+		{
+			text-decoration: none;
+			color: white;
+			font-size: 20px;
+		
+		}
+		.nav .n2 a:hover
+		{
+			background:#960e20 ;
+		}
+		.nav .n1 .dropdown 
+		{
+			position: absolute;
+			width: 200px;
+			top: 74px;
+			left:350px;
+			background: tomato;
+			display: none;
+		}
+		.nav .n1 ul .li:hover .dropdown
+		{
+			display:block ;
+		}
+		.nav .n1 .dropdown1 
+		{
+			position: absolute;
+			width: 300px;
+			top: 70%;
+			left: 100%;
+			background: tomato;
+			display: none;
+		}
+		.nav .n1 .d1:hover .dropdown1
+		{
+			display: block;
+
+		}
+		.nav .n1 .dropdown2 
+		{
+			position: absolute;
+			width: 300px;
+			top: 30%;
+			left: 100%;
+			background: tomato;
+			display: none;
+		}
+		.nav .n1 .dropdown1 .d1:hover .dropdown2
+		{
+			display: block;
+
+		}
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="n1">
+            <ul>
+                <li class="option"><a href="">Home</a></li>
+                <li class="option"><a href="">profile</a></li>
+                <li class="option"><a href="">Messages &diams;</a></li>
+                <li class="li option"><a class="a" href="">Courses &diams;</a>
+                    <ul class="dropdown">
+                        <li class="d1"><a href="">.NET</a></li>
+                        <li class="d1"><a href="">JAVA</a></li>
+                        <li class="d1"><a href="">MSOFFICE &diams;</a>
+                            <ul class="dropdown1">
+                                <li class="d1"><a href="">Word</a></li>
+                                <li class="d1"><a href="">Excel &diams;</a>
+                                    <ul class="dropdown2">
+                                        <li class="d1"><a href="">basic</a></li>
+                                        <li class="d1"><a href="">Advance</a></li>
+                                    </ul>
+    
+    
+                                </li>
+                                <li class="d1"><a href="">Power Point</a></li>
+                                <li class="d1"><a href="">Access</a></li>
+                            </ul>
+                        </li>
+    
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="n2"><a href="">Admin &diams;</a></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{box-sizing: border-box; margin: 0; padding: 0;}
+		.img
+		{
+			height: 100vh;
+			background:linear-gradient(85deg,#3865F3, rgba(56, 101, 243,0.5) ,rgba(90, 228, 255)) , url(1.jpg);
+			background-size: 100% 100%;
+		}
+		.img .header
+		{
+			height: 150px;
+			width: 100%;
+			/*background: red;*/
+			display: flex;
+		}
+		.img .header .logo
+		{
+			height: 150px;
+			width: 30%;
+			/*background: gray;*/
+
+
+		}
+		.img .header .link
+
+		{
+			height: 150px;
+			width: 70%;
+			/*background: yellow;*/
+			padding-left: 250px;
+		}
+		.img .header .link li 
+		{
+			text-align: center;
+			display: inline;
+			margin-right:20px;
+			line-height: 150px;
+		}
+		.img .header .link li a 
+		{
+			color: white;
+			text-decoration: none ;
+		}
+		.img .header .link li a:hover
+		{
+			color: #0F0B46;
+
+		}
+		.img .content
+		{
+			/*background: red;*/
+			margin-bottom: 50px;
+		}
+		.img p 
+		{
+			font-size:55px;
+			font-family: sans-serif;
+			font-weight: bold;
+			color: white;
+			text-align: center;
+			margin-top: 200px;
+			text-shadow: 0PX 10PX 9PX black;
+		}
+		.img span
+		{
+			color: white;
+			padding-left: 350px;
+			padding-top: 50px;
+			/*margin-right:300px ;*/
+
+		}
+		.img button
+		{
+			border-radius: 60px;
+			padding: 15px;
+			font-weight: bold;
+			margin-left: 640px;
+			border: none;
+
+		}
+		.fa-arrow-left
+		{
+			font-size: 45px;
+			background: white;
+			margin-left: 50px;
+			margin-bottom: 10px;
+
+		}
+		.fa-arrow-right
+		{
+			font-size: 45px;
+			background: white;
+			margin-left: 300px;:
+		}
+    </style>
+</head>
+<body>
+<div class="img">
+    <div class="header">
+        <div class="logo">
+            <img src="">
+        </div>
+        <div class="link">
+        <ul>
+        <li><a href="">Home</a></li>
+		<li><a href="">Slider</a></li>
+		<li><a href="">Pages</a></li>
+		<li><a href="">Portfolio</a></li>
+		<li><a href="">Blog</a></li>
+		<li><a href="">Shop</a></li>
+		<li><a href="">Features</a></li>
+		<li><a href="">Elements</a></li>
+		<li><a href="">Contact</a></li>
+        </ul>
+    </div>
+</div>
+<div class="content">
+    <p>WELCOME TO ELASTIC</p>
+    <i class="fa-solid fa-arrow-left"></i>
+    <span>Maecenas tortor nunc,imperdite sit amet felis sit amet,tincidunt faucibus dolor.</span>
+    <i class="fa-solid fa-arrow-right"></i>
+    <button>BUY NOW!</button>
+</div>
+</div>
+</body>
+</html>
