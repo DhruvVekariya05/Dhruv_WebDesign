@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background:#2b2b2b;
+            margin: 0;
+            padding: 0;
+        }
+        .loader{
+            height: 40px;
+            position: absolute;
+            top: 50%;
+            left:60%;
+            transform: translate(-50%) translate(-50%);
+        }
+        .loader span{
+            font-family: helvetica;
+            font-size: 50px;
+            color: rgba(red, green, blue,.1);
+            display: inline-block;
+            transition: all .5s;
+            animation: animate 2s infinite;
+        }
+        .loader span:nth-child(1)
+        {
+            animation-delay: .1s;
+        }
+        .loader span:nth-child(2)
+        {
+            animation-delay: .2s;
+        }
+        .loader span:nth-child(3)
+        {
+            animation-delay: .3s;
+        }
+        .loader span:nth-child(4)
+        {
+            animation-delay: .4s;
+        }
+        .loader span:nth-child(5)
+        {
+            animation-delay: .5s;
+        }
+        .loader span:nth-child(6)
+        {
+            animation-delay: .6s;
+        }
+        .loader span:nth-child(7)
+        {
+            animation-delay: .7s;
+        }
+        @keyframes animate
+        {
+            0%{
+                color: rgba(red, green, blue, .1);
+                transform: translateY(0);
+                margin-left: 0;
+            }
+            25%{
+                color: red;
+                transform: translateY(-30px);
+                margin-left: 10px;
+                text-shadow:0 15px 5px rgba(0, 0, 0, 1);
+            }
+            100%{
+                color: rgba(red, green, blue, .1);
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loader">
+        <span>L</span>
+        <span>O</span>
+        <span>A</span>
+        <span>D</span>
+        <span>I</span>
+        <span>N</span>
+        <span>G</span>
+    </div>
+    
+</body>
+</html>
