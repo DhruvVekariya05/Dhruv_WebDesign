@@ -1,0 +1,912 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    overflow-x:hidden ;
+}
+.free
+{
+   height: auto;
+   width: 100%;
+   background: #da3f3f;
+   color: #fff;
+   font-size: 18px;
+   text-align: center;
+   line-height: 40px;
+   position: relative;
+}
+.fa-xmark
+{
+    font-size: 20px;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+.discover
+{
+    height: 45px;
+    width: 100%;
+    /* background: blue; */
+    display: flex; 
+    border-bottom: 1px solid gray;
+}
+.discover .followers
+{
+    height: 50px;
+    width: 30%;
+    padding: 10px 20px;
+    /* background: pink; */
+    font-size: 15px;
+}
+.discover .followers i{
+    font-size: 20px;
+    margin-right: 5px;
+}
+.discover .followers span{
+    margin-right: 10px;
+}
+.discover .followers a{
+    text-decoration: none;
+    color: black;
+}
+.discover .followers a:hover{
+    color: gray;
+}
+.discover .open
+{
+    height: 50px;
+    width: 40%;
+    /* background: green; */
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+}
+.discover .open a{
+    color: black;
+}
+.discover .open a:hover{
+    color: gray;
+}
+ .usd
+{
+    height: 50px;
+    width: 30%;
+    /* background: yellow; */
+    text-align: right;
+    padding-right: 50px;
+}
+ .usd .main_menu
+{
+    text-align: right;
+    line-height: 50px;
+
+}
+ .usd .menu
+{
+    display: inline;
+    margin-right: 10px;
+    position: relative;
+}
+ .usd .menu a{
+    text-decoration: none;
+    color: black;
+}
+.usd .menu a:hover{
+    color: gray;
+}
+ .usd .menu .drop_down
+{
+    position: absolute;
+    top: 100%;
+    left: -10%;
+    width: 100px;
+    text-align: center;
+    list-style: none;
+    background: #fff;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    display: none;
+    z-index: 10;
+
+}
+ .usd .menu:hover .drop_down
+{
+    display: block;
+}
+ .usd .main_menu .menu::after
+{
+    content: " \02C5";
+}
+ .usd .menu:hover::after
+{
+    color: gray;
+    content: "\02C4";
+}
+.minimog
+{
+    height: 150px;
+    width: 100%;
+    /* background: tan; */
+    display: flex;
+}
+.minimog .nav{
+    height:150px;
+    width: 33.33%;
+    /* background: palevioletred; */
+    line-height: 3em;
+    padding: 20px;
+}
+.minimog .nav i{
+    display: none;
+}
+.minimog .nav ul a{
+    text-decoration: none;
+    color: black;
+}
+.minimog .nav .line{
+    display: inline;
+    font-size: 11px;
+    margin-right: 4px;
+    /* background: red; */
+}
+.minimog .pages:hover{
+    display: block;
+}
+.minimog .nav .line::after
+{
+    content: " \02C5";
+}
+.minimog .nav .line::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    height: 5px;
+    width: 0;
+    background: black;
+    transition: 2s;
+}
+.minimog .nav .line:hover::before{
+    width: 100%;
+}
+/* .minimog .nav .line:hover::after{
+    content: " \02C5"; 
+} */
+.minimog .nav .line{
+    position: relative;
+}
+.minimog .center{
+    height:170px;
+    width: 33.33%;
+    /* background: red; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.minimog .icon{
+    height:150px;
+    width: 33.33%;
+    /* background: gray; */
+    font-size: 20px;
+    text-align: center;
+    line-height: 150px;text-transform: lowercase;
+    position: relative;
+}
+.minimog .icon i{
+    margin-right: 20px;
+}
+.minimog .icon .fa-magnifying-glass::after{
+    content: "search";
+    position: absolute;
+    top: 30px;
+    left: -20px;
+    background: black;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 10px;
+    padding: 10px;
+    display: none;
+}
+.minimog .icon .fa-magnifying-glass:hover::after{
+    display: block;
+}
+.minimog .icon .fa-magnifying-glass{
+    position: relative;
+}
+.minimog .icon .fa-user::after{
+    content: "Account";
+    position: absolute;
+    top: 30px;
+    left: -7px;
+    background: black;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 10px;
+    padding: 10px;
+    display: none;
+}
+.minimog .icon .fa-user:hover::after{
+    display: block;
+}
+.minimog .icon .fa-user{
+    position: relative;
+}
+
+/* .minimog .icon::before{
+    content: '';
+
+    height: 50px;
+    width: 150px;
+    background: lightskyblue;
+    position: absolute;
+    top:95px;
+    left:145px;
+    display: none;
+}
+
+.minimog .icon:hover::before{
+    display: block;
+} */
+.minimog .icon .fa-star::after{
+    content: "0";
+    position: absolute;
+    top: -5px;
+    right: -15px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 17px;
+    height: 17px;
+    width: 17px;
+    padding: 1px;
+    background: #da3f3f;
+    border-radius: 50%;
+    color: #fff;
+}
+.minimog .icon .fa-star{
+    position: relative;
+}
+.minimog .icon .fa-bag-shopping::after{
+    content: "Cart";
+    position: absolute;
+    top: 30px;
+    left: -7px;
+    background: black;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 10px;
+    padding: 10px;
+    display: none;
+}
+.minimog .icon .fa-bag-shopping:hover::after{
+    display: block;
+}
+.minimog .icon .fa-bag-shopping{
+    position: relative;
+}
+.double{
+    height: 350px;
+    width: 100%;
+    background: url(../images/bg1.png);
+    background-size: 100% 100%;
+    display: flex;
+}
+.double .autumn{
+    height: 100%;
+    width: 70%;
+    /* background: red; */
+    padding: 80px;
+}
+.double .autumn .px{
+    font-size: 18px;
+    padding-bottom: 25px;
+}
+.double .autumn .py{
+    font-size: 40px;
+    padding-bottom: 25px;
+}
+.double .autumn .pz{
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+.double .autumn .pz:hover{
+    background: black;
+    color: #fff;
+}
+.double .recotton{
+    height: 100%;
+    width: 30%;
+    /* background: blue; */
+    padding: 110px 30px 0px 0px;
+    text-align: right;
+}
+.double .recotton i{
+    margin: 10px 0px;
+}
+.double .recotton p{
+    margin-top: 20px;
+}
+.double .recotton span a{
+    color: black;
+}
+.collection{
+    height:70px;
+    width: 100%;
+    margin:30px;
+    /* background: greenyellow; */
+    display: flex;
+}
+.collection .season{
+    font-size: 30px;
+    height:70px;
+    width: 70%;
+    padding-left: 50px;
+    /* background: blueviolet; */
+    display: flex;
+    align-items: center;
+}
+.collection .sp{
+    height:70px;
+    width: 30%;
+    /* background: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.collection .sp .dj{
+    border: 3px solid black;
+    border-radius: 50%;
+    padding: 3px;
+}
+.collection .sp i{
+    margin: 0px 10px;
+    font-size: 14px;
+    transition: 0.2s;
+}
+.collection .sp .sd:hover{
+    font-size: 18px;
+}
+.gb{
+    height: 400px;
+    width: 100%;
+    /* background: gray; */
+    display: flex;
+    padding: 0px 0px 0px 10px;
+}
+.gb .bag{
+    height: 350px;
+    width: 25%;
+    background: url(../images/k1.png);
+    background-size: 100% 100%;
+    margin-right: 20px;
+    position: relative;
+}
+.gb .bag .cl{
+    height: 50px;
+    width: 50px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 270px;
+    right:30px;
+    transform: scale(1);
+}
+.gb .bag .cl .fa-arrow-right{
+    padding: 18px;
+}
+.gb .bag .cl:hover
+{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+.gb .bag:hover .cl{
+    background: black;
+    color: #fff;
+}
+.gb .bag .a{
+    font-size: 25px;
+    padding: 265px 20px 10px 20px ;
+}
+.gb .bag .b{
+    margin: 0px 20px 20px 20px ;
+}
+.gb .bag .fa-circle{
+    font-size: 50px;
+    color: #fff;
+    padding-top: 0px;
+}
+.gb .shoes{
+    background: url(../images/k2.png);
+    background-size: 100% 100%;
+}
+.gb .shoes .c{
+    font-size: 25px;
+    margin: 265px 20px 10px 20px ;
+}
+.gb .shoes .d{
+    margin: 0px 20px 20px 20px ;
+}
+.gb .tops{
+    background: url(../images/k3.png);
+    background-size: 100% 100%;
+}
+.gb .tops .e{
+    font-size: 25px;
+    margin: 265px 20px 10px 20px ;
+}
+.gb .tops .f{
+    margin: 0px 20px 20px 20px ;
+}
+.gb .blazers{
+    background: url(../images/k4.png);
+    background-size: 100% 100%;
+}
+.gb .blazers .g{
+    font-size: 25px;
+    margin: 265px 20px 10px 20px ;
+}
+.gb .blazers .h{
+    margin: 0px 20px 20px 20px ;
+}
+.about{
+    height: auto;
+    width: 100%;
+    /* background: red; */
+    text-align: center;
+    padding: 25px;
+}
+.about .font{
+    font-size: 25px;
+    color: gray;
+}
+.about .font a{
+    color: black;
+}
+.about .font a::after{
+    content:" \02C5" ;
+}
+
+
+
+.rounded{
+    height: 530px;
+    width: 100%;
+    /* background: yellowgreen; */
+    display: flex;
+    padding: 0px 0px 0px 10px;
+}
+.rounded .f1{
+    height: 530px;
+    width: 25%;
+    background: white;
+    margin-right: 20px;
+    position: relative;
+}
+.rounded .f1 .card_img{
+    height: 350px;
+    width: 250px;
+    z-index: 0;
+    position: relative; 
+    overflow: hidden;
+}
+.rounded .f1 .card_img .icon_4{
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    background:white;
+    display: flex;
+    z-index: 7;
+}
+.rounded .f1 .card_img .icon_4{
+    opacity: 0;
+    position: absolute;
+    top: 320px;
+    right: 35px;
+    transition: 0.5s;
+}
+.rounded .f1:hover .icon_4{
+    opacity: 1;
+    top: 280px;
+}
+.rounded .f1 .card_img .icon_4 .j_1{
+    height: 50px;
+    width: 50px;
+    /* background: red; */
+    border-right: 1px solid gray;   
+    font-size: 15px;
+    text-align: center;
+    line-height: 50px;
+}
+.rounded .f1 .card_img .icon_4 .j_2{
+    border-right: none;
+}
+.rounded .f1 .card_img::after{
+    content: "";
+    height: 350px;
+    width: 270px;
+    background: url(../images/glass1.1.png);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    opacity: 0;
+    transition: 1s;
+    transform: scale(1);
+}
+.rounded .f1 .card_img.f2::after{
+    content: "";
+    background: url(../images/glass2a.png);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    opacity: 0;
+    transition: 1s;
+    transform: scale(1);
+}
+.rounded .f1 .card_img.f3::after{
+    content: "";
+    background: url(../images/glass3a.png);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    opacity: 0;
+    transition: 1s;
+    transform: scale(1);
+}
+.rounded .f1 .card_img.f4::after{
+    content: "";
+    background: url(../images/glass4a.png);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    opacity: 0;
+    transition: 1s;
+    transform: scale(1);
+}
+.rounded .f1 .card_img.f5::after{
+    content: "";
+    background: url(../images/glass5a.png);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    opacity: 0;
+    transition: 1s;
+    transform: scale(1);
+}
+.rounded .f1 .card_img.f6::after{
+    content: "";
+    background: url(../images/glass6a.png);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    opacity: 0;
+    transition: 1s;
+    transform: scale(1);
+}
+.rounded .f1 .card_img.f7::after{
+    content: "";
+    background: url(../images/glass7a.png);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    opacity: 0;
+    transition: 1s;
+    transform: scale(1);
+}
+.rounded .f1 .card_img.f8::after{
+    content: "";
+    background: url(../images/glass8a.png);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    opacity: 0;
+    transition: 1s;
+    transform: scale(1);
+}
+.rounded .f1 .card_img.f9::after{
+    content: "";
+    background: url(../images/glass9a.png);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    opacity: 0;
+    transition: 1s;
+    transform: scale(1);
+}
+.rounded .f1 .card_img.f10::after{
+    content: "";
+    background: url(../images/glass10a.png);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    opacity: 0;
+    transition: 1s;
+    transform: scale(1);
+}
+/* .rounded .f1 .card_img.f2::after{
+    content: "";
+    background: url(../images/glass4a.png);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    opacity: 0;
+    transition: 1s;
+    transform: scale(1);
+} */
+.rounded .f1 .card_img:hover::after{
+    opacity: 1;
+    transform: scale(1.1);
+}
+.rounded .f1 .card_text{
+    height: 130px;
+}
+.rounded .f1 .card_text .v1{
+    font-size: 16px;
+	padding-top: 35px;
+}
+.rounded .f1 .card_text .v1:hover{
+    color: gray;
+}
+.rounded .f1 .card_text .v2{
+    font-size: 16px;
+	padding-top: 15px;
+}
+.rounded .f1 .card_text .v3{
+    padding-top: 20px;
+}          
+ /*icon color start  */
+.rounded .f1 .card_text .v3 .v4{
+    color: yellow;
+	font-size: 20px;
+	border: 1px solid black;
+	border-radius: 50%;
+	padding: 5px;
+    position: relative;
+}
+.rounded .f1 .card_text .v3 .v4.d1{
+    color: blue;
+}
+.rounded .f1 .card_text .v3 .v4.d3{
+    color:lightblue;
+}
+.rounded .f1 .card_text .v3 .v4.d5{
+    color:black;
+}
+.rounded .f1 .card_text .v3 .v4.d7{
+    color:purple;
+}
+.rounded .f1 .card_text .v3 .v4.d9{
+    color:blue;
+}
+.rounded .f1 .card_text .v3 .v4.d11{
+    color:white;
+}
+.rounded .f1 .card_text .v3 .v4.d13{
+    color:lightblue;
+}
+.rounded .f1 .card_text .v3 .v4.d15{
+    color:blue;
+}
+
+
+
+.rounded .f1 .card_text .v3 .v5.d2{
+    color: pink;
+}
+.rounded .f1 .card_text .v3 .v5.d4{
+    color:darkblue;
+}
+.rounded .f1 .card_text .v3 .v5.d6{
+    color:brown;
+}
+.rounded .f1 .card_text .v3 .v5.d8{
+    color:rosybrown;
+}
+.rounded .f1 .card_text .v3 .v5.d10{
+    color:black;
+}
+.rounded .f1 .card_text .v3 .v5.d12{
+    color:purple;
+}
+.rounded .f1 .card_text .v3 .v5.d14{
+    color:darkblue;
+}
+.rounded .f1 .card_text .v3 .v5.d16{
+    color:black;
+}
+/*icon color end  */
+
+.rounded .f1 .card_text .v3 .v4 .w1{
+    height: 20px;
+    width: 50px;
+    padding: 2px;
+    border-radius: 5px;
+    background: black;
+    font-size: 12px;
+    color: #fff;
+    position: absolute;
+    top:-25px;
+    left: 0;
+    display: none;
+}
+.rounded .f1 .card_text .v3 .v4:hover .w1{
+    display: block;
+}
+.rounded .f1 .card_text .v3 .v5{
+    font-size: 23px;
+    position: relative;
+}
+.rounded .f1 .card_text .v3 .v5 .w2{
+    height: 25px;
+    width: 60px;
+    padding: 5px;
+    border-radius: 5px;
+    background:black;
+    font-size: 12px;
+    color: white;
+    position: absolute;
+    top:-30px;
+    left: 10;
+    display: none;
+}
+.rounded .f1 .card_text .v3 .v5:hover .w2{
+    display: block;
+}
+
+
+.lord_more{
+    height: 150px;
+    width: 100%;
+    /* background: purple; */
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lord_more .lord_more_center{
+    height: 45px;
+    width: 130px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background:white;
+    transform: scale(1);
+    transition: 0.3s;
+}
+.lord_more .lord_more_center:hover{
+    background: black;
+    color: #fff;
+    transform: scale(1.1);
+}
+.service{
+    height: 200px;
+    width: 100%;
+    display: flex;
+}
+.service .Shipping{
+    height:200px;
+    width: 25%;
+    display: flex;
+}
+.service .Shipping .ship_icon
+{
+    height:200px ;
+    width: 20%;
+    text-align: center;
+    line-height: 200px;
+}
+.service .Shipping .ship_text
+{
+    height: 200px;
+    width: 80%;
+    text-align: center;
+    padding-top: 70px; 
+}
+.service .Shipping .ship_text h3{
+    width:80%;
+    text-align: left;
+}
+.service .Shipping .ship_text p{
+    width:80%;
+    color: grey;
+    text-align: left;
+}
+.fa_info{
+    height: 400px;
+    width: 100%;
+    /* background: red; */
+    display: flex;
+}
+.fa_info .information{
+    height:400px;
+    width: 25%;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+.fa_info .information h3{
+    font-size: 19px;
+    margin: 30px 20px 30px 50px;
+}
+.fa_info .information input{
+    text-align: center;
+    padding: 10px;
+}
+.fa_info .information .quick li{
+    font-size: 16px;
+    margin: 30px 20px 10px 50px;
+}
+.fa_info .information .quick .right_padding{
+    padding-right: 30px;
+}
+.fa_info .information .quick .right_padding a{
+    color: black;
+
+}
+.fa_info .information .one_line{
+    font-size: 16px;
+    margin: 30px 20px 10px 50px;
+    padding-right: 90px;
+}
+.last_div{
+    height: 200px;
+    width: 100%;
+    /* background: violet; */
+    display: flex;
+}
+.last_div .last_img{
+    height: 200px;
+    width: 33.33%;
+    /* background: blueviolet; */
+    text-align: center;
+    padding-top: 70px;
+}
+.last_div .last_span{
+    height: 200px;
+    width: 33.33%;
+    /* background: palevioletred; */
+}
+.last_div .last_span{
+    text-align: center;
+    line-height: 200px;
+}
+.last_div .last_logo{
+    height: 200px;
+    width: 33.33%;
+    /* background: tomato; */
+    padding: 70px 30px;
+}
+.last_div .last_logo i{
+    margin-right: 20px;
+}
+.last_div .last_logo span{
+    margin-right: 20px;
+}
+
+
+
