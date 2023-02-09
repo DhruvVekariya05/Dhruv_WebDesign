@@ -1,9 +1,0 @@
-@media (max-width:700px) {
-    
-    .free{background: gray;}
-    .discover{display: none;}
-    .minimog .nav ul{display: none;}
-    .minimog .nav i{display: block;}
-    .double .autumn{width: 100%; background: blue;}
-    .double .recotton{width: 100%;}
-}
