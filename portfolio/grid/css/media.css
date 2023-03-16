@@ -1,0 +1,115 @@
+@media (max-width:900px) {
+    .header
+    {
+        grid-template-columns: 1fr;
+    }
+    .header .subheader .text
+    {
+        display: none;
+    }
+    .webmag .news .web_img
+    {
+        border: none;
+    }
+    .webmag .news .text_hover
+    {
+        display: none;
+    }
+    .webmag .seaech
+    {
+        border-bottom: none;
+    }
+    .fifty
+    {
+        grid-template-columns: 1fr;
+    }
+    .row
+    {
+        grid-template-columns: 1fr;
+         grid-gap: 20px;
+          grid-template-rows:500px 500px ;
+    }
+    .ask_main
+    {
+        grid-template-columns: 1fr;
+    }
+    .ask_main .ask .part
+    {
+        grid-template-columns: 1fr;
+    }
+    .ask_main .four_part .vg .Posts_side .post_side_sample
+    {
+        margin:50px;
+    }
+    .Featured .h1_tag
+    {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 40px 50px ;
+        grid-gap: 0px;
+    }
+    .Most_Read
+    {
+        grid-template-columns: 1fr;
+    }
+    .Most_Read .xd .five_part .sd
+    {
+        height: 100%;
+        width: 80%;
+    }
+    .Most_Read .xd .five_part .three_text{
+        height: 100%;
+        width: 80%;
+        padding: 0;
+        margin: 0;
+    }
+    .Most_Read .xd .five_part
+    {
+        grid-template-columns: 1fr;
+    }
+    .load_button
+    {
+        height: 50%;
+        width: 50%;
+    }
+    .load_button .fj_button
+    {
+        text-align: center;
+        padding: 10px 50px;
+    }
+    .Catagories
+    {
+        margin-left: 50px;
+    }
+    .Catagories .Catagories_text
+    {
+        text-align: center;
+    }
+    .last
+    {
+        grid-template-columns: 1fr;
+    }
+    .last .about_mag
+    {
+        text-align: left;
+    }
+    .last .our
+    {
+        text-align: left;
+    }
+    .last .Newsletter
+    {
+        text-align: left;
+    }
+    .ask_main .four_part .vg .Posts_side .post_side_img .contan.xyz
+    {   position: absolute;
+        top: 70%;
+        left: 0;
+    }
+    .ask_main .four_part .vg .Posts_side .post_side_img .contan
+    {
+            position: absolute;
+            top: 20%;
+            left: 0;
+    }
+}
