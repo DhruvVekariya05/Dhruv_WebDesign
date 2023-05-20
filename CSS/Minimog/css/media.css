@@ -1,0 +1,54 @@
+@media (max-width:700px) {
+    
+    /* .free{display: none;} */
+    .discover{display: none;}
+    .minimog{height: auto;}
+    .minimog .icon{padding-top: 20px;}
+    .minimog .icon .fa-user{display: none;}
+    .minimog .icon .fa-star{display: none;}
+    .minimog .nav ul{display: none;}
+    .minimog .nav i{display: block;}
+    .gb .bag{width:100%;margin:10px 90px;}
+    .double{position: relative;height: 350px;}
+    .double .autumn{
+        position: absolute;
+         top: 100%;
+         left: 0;
+         width: 100%;
+         height: 200px;
+         padding: 30px;
+         text-align: center;
+        }
+    .double .recotton{
+        position: absolute;
+         top: 150%;
+         left: 0;
+         height: 80px;
+         width: 100%;
+         padding: 0px 0px 0px 0px;
+         display: flex;
+    }
+    .double .recotton .circle1{width: 50%;padding: 20px 10px;}
+    .double .recotton .circle2{text-align: left;}
+    .double .recotton .tee{display: none;}
+    
+    .collection{margin-top: 280px;}
+    .rounded
+    {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+    .rounded .f1{width: 50%;}
+
+    .service .Shipping{width: 100%;}
+    .service .Shipping .ship_icon{padding-top: 20px;}
+    .service .Shipping .ship_text{padding-top: 50px;}
+
+    .fa_info .information{width: 100%;}
+    .fa_info .information h3{margin: 10px 0 10px 0;}
+
+    .last_div .last_img{width: 100%;padding-top: 30px;}
+    .last_div .last_span{width: 100%; padding-top: 30px}
+    .last_div .last_logo{width: 100%;padding: 30px 30px;}
+}
