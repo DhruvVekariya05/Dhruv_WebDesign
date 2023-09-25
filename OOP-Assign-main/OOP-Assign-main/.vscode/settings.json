@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.env.local": "env",
+        "ostream": "cpp",
+        "iostream": "cpp",
+        "string": "cpp",
+        "iosfwd": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}
